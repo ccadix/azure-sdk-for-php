@@ -43,7 +43,7 @@ use PHPUnit\Framework\TestCase;
  */
 class ConnectionStringSourceTest extends TestCase
 {
-    public function setUp()
+    protected function setUp() : void
     {
         $property = new \ReflectionProperty('WindowsAzure\Common\Internal\ConnectionStringSource', '_isInitialized');
         $property->setAccessible(true);

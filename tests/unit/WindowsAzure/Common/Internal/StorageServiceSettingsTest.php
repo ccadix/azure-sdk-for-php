@@ -47,7 +47,7 @@ class StorageServiceSettingsTest extends TestCase
 {
     private $_accountName = 'mytestaccount';
 
-    public function setUp()
+    protected function setUp() : void
     {
         $property = new \ReflectionProperty('WindowsAzure\Common\Internal\StorageServiceSettings', 'isInitialized');
         $property->setAccessible(true);

@@ -62,7 +62,7 @@ class ServiceManagementRestProxyTestBase extends ServiceRestProxyTestBase
      */
     protected $serviceManagementRestProxy;
 
-    public function setUp()
+    protected function setUp() : void
     {
         $this->skipIfEmulated();
         $this->skipIfOSX();
@@ -362,7 +362,7 @@ class ServiceManagementRestProxyTestBase extends ServiceRestProxyTestBase
         }
     }
 
-    protected function tearDown()
+    protected function tearDown() : void
     {
         parent::tearDown();
 

@@ -56,7 +56,7 @@ class ServiceBusRestProxyTestBase extends ServiceRestProxyTestBase
      */
     protected $serviceBusWrapper;
 
-    public function setUp()
+    protected function setUp() : void
     {
         $this->skipIfEmulated();
         parent::setUp();
@@ -143,7 +143,7 @@ class ServiceBusRestProxyTestBase extends ServiceRestProxyTestBase
         }
     }
 
-    protected function tearDown()
+    protected function tearDown() : void
     {
         parent::tearDown();
 

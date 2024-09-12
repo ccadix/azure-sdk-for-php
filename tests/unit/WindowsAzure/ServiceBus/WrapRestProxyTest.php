@@ -50,7 +50,7 @@ class WrapRestProxyTest extends ServiceRestProxyTestBase
     /** @var  IWrap */
     private $_wrapRestProxy;
 
-    public function setUp()
+    protected function setUp() : void
     {
         $this->skipIfEmulated();
 

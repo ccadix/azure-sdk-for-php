@@ -45,7 +45,7 @@ use PHPUnit\Framework\TestCase;
  */
 class ServiceBusSettingsTest extends TestCase
 {
-    public function setUp()
+    protected function setUp() : void
     {
         $property = new \ReflectionProperty('WindowsAzure\Common\Internal\ServiceBusSettings', 'isInitialized');
         $property->setAccessible(true);

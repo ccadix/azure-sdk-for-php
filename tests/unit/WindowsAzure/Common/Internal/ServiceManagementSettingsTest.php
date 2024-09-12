@@ -44,7 +44,7 @@ use PHPUnit\Framework\TestCase;
  */
 class ServiceManagementSettingsTest extends TestCase
 {
-    public function setUp()
+    protected function setUp() : void
     {
         $property = new \ReflectionProperty('WindowsAzure\Common\Internal\ServiceManagementSettings', 'isInitialized');
         $property->setAccessible(true);
