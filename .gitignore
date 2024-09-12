@@ -12,3 +12,6 @@ composer.phar
 .vscode/
 .idea/
 examples/MediaServices/IndexerOutput/
+
+# PHPStan
+phpstan.neon

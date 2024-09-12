@@ -29,8 +29,10 @@ use function GuzzleHttp\Psr7\parse_response;
 use WindowsAzure\Common\Internal\Validate;
 use WindowsAzure\Common\ServiceException;
 use GuzzleHttp\Psr7\Response;
-use Zend\Mime\Message;
-use Zend\Mime\Part;
+// use Zend\Mime\Message;
+// use Zend\Mime\Part;
+use Laminas\Mime\Message;
+use Laminas\Mime\Part;
 
 /**
  * Batch response parser.
